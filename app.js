@@ -3,7 +3,7 @@ var app = express();
 
 // set the view engine to ejs
 app.use(express.static('views'));
-app.use(express.static('js'));
+app.use(express.static('assets'));
 
 // use res.render to load up an ejs view file
 

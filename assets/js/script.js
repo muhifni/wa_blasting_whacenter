@@ -47,7 +47,7 @@ let number = 0;
 
 
 function sendBlasting(){
-  for (let i = 0; i < 300; i++) {
+  for (let i = 0; i < 1; i++) {
     var data = new FormData();
     data.append("device_id", "8c0dc127cf6cd6756eb34bffbde413e7");
     data.append("number", "089683768942");

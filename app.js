@@ -13,8 +13,8 @@ app.get('/', function(req, res) {
 });
 
 // about page
-app.get('/about', function(req, res) {
-  res.render('pages/about');
+app.get('/blaster001', function(req, res) {
+  res.render('WA_blaster_whacenter.ejs');
 });
 
 app.listen(8080);

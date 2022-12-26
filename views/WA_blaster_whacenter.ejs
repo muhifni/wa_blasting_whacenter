@@ -43,45 +43,36 @@
           <h2>Whatsapp Tools</h2>
           <hr>
         </div>
-        <div class="flex-container">
-          <div class="card text-center m-2 px-1 py-2 align-items-center" style="width: 16rem;">
-            <img src="/images/Whatsapp.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">WA Blaster (whacenter)</h5>
-              <a href="/blaster001">
-                <button href="#" class="btn-hover color-9">
-                  <div class="btn-text">
-                    Gaskeuun
-                  </div>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="card text-center m-2 px-1 py-2 align-items-center" style="width: 16rem;">
-            <img src="/images/Whatsapp.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Coming Soon :)</h5>
-              <a class="nav-link disabled" href="#">
-                <button href="#" class="btn-hover color-9">
-                  <div class="btn-text">
-                    Gaskeuun
-                  </div>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="card text-center m-2 px-1 py-2 align-items-center" style="width: 16rem;">
-            <img src="/images/Whatsapp.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Coming Soon :)</h5>
-              <a class="nav-link disabled" href="/blaster001">
-                <button href="#" class="btn-hover color-9">
-                  <div class="btn-text">
-                    Gaskeuun
-                  </div>
-                </button>
-              </a>
-            </div>
+        <div class="flex-container flex-column align-content-stretch">
+          <div class="form-container bg-white p-4 rounded shadow-sm">
+            <form>
+              <!-- start device ID -->
+              <div class="mb-3">
+                <label for="deviceID" class="form-label">Device ID</label>
+                <input id="deviceID" type="text" class="form-control" placeholder="Device ID" aria-label="device ID">
+              </div>
+              <!-- end device ID -->
+              <!-- start type message -->
+              <div class="mb-3">
+                <label for="typeMessage" class="form-label">Type of Message : </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Text</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Text + Button</label>
+                </div>
+              </div>
+              <!-- end type message -->
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
 
         </div>

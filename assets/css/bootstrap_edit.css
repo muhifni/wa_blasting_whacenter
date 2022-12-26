@@ -3,11 +3,16 @@
   justify-content: flex-end;
 }
 
-.navbar {
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  color: currentColor;
+  display: inline-block; /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
 }
 
 #WA_Tools .card {
-  width: 250px !important;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -24,4 +29,8 @@
     #38ef7d,
     #11998e
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card img {
+  width: 30%;
 }

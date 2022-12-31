@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PERBUN Tools</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/bootstrap_edit.css" rel="stylesheet">
 </head>
@@ -15,7 +16,8 @@
     <nav class="navbar navbar-expand-lg bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,6 +46,16 @@
         <div class="flex-container flex-column align-content-stretch">
           <div class="form-container bg-white p-4 rounded shadow-sm">
             <form>
+              <!-- start template message -->
+              <div class="mb-3">
+                <label for="validationCustom04" class="form-label">Template</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Template 1</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <!-- end template message -->
               <!-- start device ID -->
               <div class="mb-3">
                 <label for="deviceID" class="form-label">Device ID</label>
@@ -62,20 +74,48 @@
                 <textarea class="form-control" id="pesanWhatsapp" rows="3"></textarea>
               </div>
               <!-- end text message -->
+              <!-- start button -->
+              <div class="row mb-3">
+                <div class="col-sm">
+                  <label for="button_1" class="form-label">Button 1</label>
+                  <input type="text" class="form-control" id="button_1" placeholder="optional" aria-label="Button 1">
+                </div>
+                <div class="col-sm">
+                  <label for="button_2" class="form-label">Button 2</label>
+                  <input type="text" class="form-control" id="button_2" placeholder="optional" aria-label="Button 2">
+                </div>
+                <div class="col-sm">
+                  <label for="button_3" class="form-label">Button 3</label>
+                  <input type="text" class="form-control" id="button_3" placeholder="optional" aria-label="Button 3">
+                </div>
+              </div>
+              <!-- end button -->
+              <!-- start file upload -->
+              <div class="mb-3">
+                <label for="" class="form-label">Image Upload</label>
+                <div class="input-group mb-3">
+                  <input type="file" class="form-control" id="file_upload">
+                  <label class="input-group-text" for="file_upload">Upload</label>
+                </div>
+              </div>
+              <!-- end file upload -->
               <!-- start type message -->
               <div class="mb-3">
                 <label for="typeMessage" class="form-label">Type of Message : </label>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
                   <label class="form-check-label" for="inlineRadio1">Text</label>
                 </div>
                 <div class="mb-3 form-check">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
                   <label class="form-check-label" for="inlineRadio2">Text + Button</label>
                 </div>
               </div>
               <!-- end type message -->
               <button type="button" class="btn btn-primary" onclick="sendBlastingFetch()">Fire</button>
+              <button type="button" class="btn btn-primary" onclick="">Test Message</button>
             </form>
           </div>
 
@@ -89,7 +129,9 @@
   <footer></footer>
 
   <script type="text/javascript" src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
